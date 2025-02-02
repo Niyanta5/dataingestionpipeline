@@ -13,7 +13,7 @@ class CSVIngestor:
     def ingest(self, file_path: str, table_name: str, dtype: Optional[dict]= None):
         try:
             if not os.path.exists(file_path):
-                raise FileNotFoundError(f"{file_path}" does not exist)
+                raise FileNotFoundError(f"{file_path} does not exist")
 
             df = pd.read_csv(file_path, dtype=dtype, parse_dates=True)
             df.to_sql(
