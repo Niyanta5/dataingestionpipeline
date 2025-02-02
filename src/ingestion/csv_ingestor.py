@@ -5,6 +5,15 @@ from sqlalchemy.exc import SQLAlchemyError
 from ..connectors.postgresql import PostgreSQLConnector
 from ..utils.logger import logger
 
+# Debug imports
+try:
+    from ..connectors.postgresql import PostgreSQLConnector
+    from ..utils.logger import logger
+    print("✅ Imports successful!")
+except ImportError as e:
+    print(f"❌ Import failed: {e}")
+
+
 class CSVIngestor:
     def __init__(self):
         self.connector = PostgreSQLConnector()
