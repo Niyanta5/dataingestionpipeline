@@ -48,10 +48,12 @@ A Python-based pipeline to ingest CSV data into PostgreSQL, designed for scalabi
    docker exec -it data-ingestion-pipeline-ingestion-1 python -m pytest tests/
    ```
 ### Expected Output
+```bash
 🟢 Starting ingestion for file: /app/data/raw/sales_data.csv
 ✅ File exists: /app/data/raw/sales_data.csv
 📊 DataFrame loaded. Rows: 2
 💾 Data written to table: sales
 INFO: Ingestion successful. 2 rows ingested from /app/data/raw/sales_data.csv
+```
 
 
