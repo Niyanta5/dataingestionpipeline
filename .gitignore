@@ -1,0 +1,24 @@
+# Python virtual environment
+venv/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log files
+*.log
+
+# Docker-related files
+docker-compose.override.yml
+
+# Local development files
+local/
